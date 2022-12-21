@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="first.css">
+  <link rel="stylesheet" href="second.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <link rel="stylesheet" href="intex.css">
+  <link rel="stylesheet" href="third.css">
+</head>
+<body>
+  <!-- first part -->
+
+ <div id="firstpage" class="firstpage">
+  <div class="imgcontainer">
+  <span class="close" title="Close Modal">&times;</span>
+  <img src="anish.jpg" alt="Avatar" class="avatar">
+  </div>
+  
+  <div class="container">
+   <label for="Uname"><b>Username</b></label>
+   <input type="text" placeholder="Enter Username" name="Uname" id="texth1" required>
+   <label for="psw"><b>Password</b></label>
+   <input type="password" placeholder="Enter Password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+   <!-- <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i> -->
+  
+   <br><br>
+   <input type="checkbox" class="showpass">Show Password
+   <button type="submit" id="login">Log In</button>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancel">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+  </form>
+  
+  <br><br>
+  
+  <div id="message">
+    <h3>Password must contain the following:</h3>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="number" class="invalid">A <b>number</b></p>
+    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+  </div>
+  
+  </div>  
+
+  <!-- second part -->
+
+
+  <div id="secondpage">
+    <div id="forfix">
+      <div id="heading">
+        <b id="research" >Research</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b id="publication">Awareness programs</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b id="experts">Experts Opinions</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b id="media">Media</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b id="about">About</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-search" id="search"></i>&nbsp;&nbsp;
+        <div class="threeline"><i class="fa fa-bars"></i> </div>
+        
+      </div>
+      <div class="heading">
+        <img src="replace home .png" alt=""id="rpl">
+       
+      </div>
+  
+    </div>
+        <hr>
+      <br>
+      <div id="image">
+        <img src="vote1.jpg" alt="" class="image1">
+        <img src="vote2.jpg" alt="" class="image2">
+      </div>
+      <br>
+  
+      <div id="extra text">
+  
+        <h1 id="textfor2 ">Here ,we are for Online voting</h1>
+        <div>
+        <h2> Election Rules and Regulation</h2>
+        <ol>
+           <li>Voting is by a secret ballot. Displaying your ballot or discussing your vote or another person's votes is prohibited.
+          </li>
+           <li>Only one person is permitted in a voting booth at a time. 
+          </li>
+           <li>Only eligible electors are permitted in the voting place and they must leave immediately after voting. 
+          </li>
+           <li>Vote buying and intimidation are prohibited. 
+          </li>
+           <li>Signing a false statement is an offense.
+          </li>
+        </ol>
+        </div>
+      </div>
+      <br>
+      <br>
+      <button id="votenow">VOTE NOW</button>
+  
+      <!-- For research  -->
+     <div id="clickresearch" class="modal">
+      <span onclick="document.getElementById('clickresearch').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <div id="beginarea">
+        <h1>Research</h1>
+        <div >Here for this online voting paln our teams research a lot and see all possible thing. 
+        </div>
+       
+      </div>
+      <div id="text1">
+        <b>A Think Tank for the Digital Era
+        </b>
+        <br>
+        <p>The digital economy, driven largely by data and other intangibles, demands a new approach to international governance across the areas of trade, law, security, economic policy and privacy, to name a few.</p>
+        
+        <p>Policy making is shifting dramatically as governments strive to keep up with new technologies and manage the increasing volume of data flowing across borders. Institutions — national, regional and international — must evolve quickly to fill governance and regulatory gaps exactly at a time when support for international cooperation is lacking.
+        </p>
+        <br>
+        <b>The Economy Is Driven by Data</b>
+        <p>The policy and legal architecture needed to effectively govern data, artificial intelligence and platforms is not keeping pace with privacy, competition and consumer protection concerns. Trade policy, financial systems and international standards must be addressed.</p>
+        <br>
+        <b>New Technologies Threaten Democracy and Security</b>
+        <br>
+        <p>The international security and geopolitical landscape has changed fundamentally, a shift driven in many ways by new technologies and the lack of internationally accepted rules around their use. Innovation, intellectual property, cybersecurity, internet and digital platform governance, and online violence issues are at the core of this work.</p>
+        <b>Global Institutions Must Adapt to the Digital Era</b>
+        <p>Multilateral institutions must be renewed — or, in some cases, created — to counter the isolationism, dysfunction and stalemate that have hampered responses to some of the world’s biggest challenges. The Group of Twenty and the Group of Seven, the World Trade Organization and the International Monetary Fund are among the key institutions under scrutiny.</p>
+        <br>
+        <br>
+      </div>
+      <br><br>
+      <div id="piechart">
+        <br><br>
+        <h1>PIECHART OF PEOPLE THOURGH ABOUT ONLINE ELECTION SYSTEM</h1>
+        <br>
+       <p>We ask 1000 pepople about online election system.We include male, female, old people(greater then 70 year) in resources.Many people is positive about this system. Some of then are nutual. And some people tell its not good at all. </p>
+       <br>
+       <b>Here we have pie chart including
+        <ul>
+          <ol>
+            <li>People who like online election system.</li>
+            <li>People who are nutual about it. </li>
+            <li>People who don't like it. </li>
+          </ol>
+        </ul>
+       </b>
+       <br>
+       <br>
+       <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+      </div>
+      <button id="closerec">CLOSE</button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  
+     </div>
+  <!-- For awareness porgram -->
+     <div class="modal" id="clickpublic">   
+     <span onclick="document.getElementById('clickpublic').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <div id="firstpart">
+        <h1>PRE-ELECTION AWARENESS PROGRAM</h1>
+        <br>
+  
+        <b>Tool summary</b>
+        <br>
+        <p>A Pre-Election Voter Awareness Campaign (PEVAC) is aimed at sensitizing
+          voters about the importance of participating in the electoral process as a way to
+          ensure a responsive, accountable and democratically elected government. In a
+          democracy, a free and fair vote is the fundamental tool through which citizens
+          can express their political preferences and developmental wishes. However, in
+          representative forms of democracies, merely casting the vote may not be
+          adequate to hold the elected officials and the executive accountable or to foster a
+          responsive and transparent government. Therefore, providing voters with
+          information on the electoral process, political parties and their manifestos, poll
+          antecedents of the candidates etc. are necessary to educate them prior to the
+          polling day is critical to enable them cast an enlightened and informed vote. A
+          PEVAC aims to precisely do that i.e. to provide such critical information and in
+          doing so, create better-informed, more motivated citizenry and, ultimately, a more
+          responsive, transparent and accountable government.</p>
+          <br>
+          <b>What's it</b>
+          <br>
+          <p>A Pre-Election Voter Awareness Campaign is aimed at making people aware of:
+            the importance of their participation in the electoral processes either as voters or
+            candidates; the modes of participation; the procedure to become eligible for
+            voting and to actually cast their vote; the ways to assess the poll-worthiness of a
+            candidate. The goal of a Pre-Election Voter Awareness Campaign is to create an
+            environment for free and fair elections, and to encourage in particular, the
+            participation of marginalized groups such as women, the minorities, special
+            ethnic communities and the poor..
+            Such a campaign was pioneered in five states in India in 2006 by the Society for
+            Participatory Research in Asia and its partners. It was hailed as a success owing
+            to reports of a substantial increase in the overall participation of voters, and
+            women and members of the lower castes, in particular. Similar awareness
+            campaigns have been undertaken in other countries such as for e.g. the Republic
+            of Georgia, a fledgling democracies such as the Republic of Georgia, where the
+            main focus was on increasing citizens‟ understanding of electoral standards and 
+            procedures, and on promoting active participation of voters.
+          </p>
+      <br>
+      <br>
+      </div>
+      <br>
+      <br>
+      <div id="secondpart">
+        <h2 id="h2">SOME PICTURE OF AWARENESS PROGRAM IN DIFFERENT PLACE</h2>
+        <div id="awafor1">
+          <img id="imgawa1" src="awareness1.png" alt="pic of awareness" >
+        <p id="awaimg1">This picutre show that some educate person are going to teach about online voting system. Most of them are student, student are doing their responsibility.</p>
+  
+        </div>
+        <div id="awafor2">
+          <p id="awaimg2">In this picutre we can clearly see that  professeor is teaching a lot of people about the election, voting system, importance of vote and value of one vote. All of people are very interested to learned. </p>
+          <img id="imgawa2" src="awareness2.png" alt="pic of awareness">
+        </div>
+        <div id="awafor3">
+          <img src="awareness3.png" alt="" id="imgawa3">
+          <p id="awaimg3">This picutre show that people of rural area are interested to learn about election. By this awareness program we teach about election as well as about model technology. It's help also to increase literacy rate. </p>
+        </div>
+        <div id="awafor4">
+          <p id="awaimg4">Election is not only for adult. We should teach about election from childhood. Now a day young people thing politic is bad thing. TO change their mentility we should teach advantage of election form child.</p>
+          <img src="awareness4.png" alt="" id="imgawa4">
+        </div>
+        
+        
+      </div>
+      <button id="closerec" onclick="document.getElementById('clickpublic').style.display='none' ">CLOSE</button>
+      <br>
+      <br>
+      <br> 
+      <br>
+      <br>
+      <br>
+      
+     </div>
+  
+     <!-- for experts opinions -->
+     <div id="clickexperts" class="modal">
+      <span onclick="document.getElementById('clickexperts').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <div id="I">
+        <h1>Why experts opinions is important!!</h1>
+        <hr>
+        <b>Expert opinion is often sought by government regulatory agencies when there is insufficient empirical evidence to judge the safety implications of a course of action. However, it can be reckless to continue following expert opinion when a preponderance of evidence is amassed that conflicts with this opinion.</b>
+        <br>
+        <br>
+        <b>Nearly every dental malpractice claim requires expert testimony.  Experts help determine the requisite standard of care, whether or not that standard was met, and, if so, if a deviation caused the injury complained of by the plaintiff.  Expert deposition and trial testimony are critical.
+        </b>
+        <br>
+        <br>
+        <b>An expert who practices in a certain area, relevant to the issues formulating the allegations in a lawsuit, will be more persuasive.  An expert who does not have a high level of competency will be exposed on the deposition, at trial, and maybe excluded from testifying at all.  Many times dental cases are won or lost based on the effectiveness of expert testimony.  Having a qualified expert, who knows the medicine and understands the assertions in a complaint, can be the difference between a successful and unsuccessful result.  Therefore, wisely choose experts.
+        </b>
+        <br>
+        <br>
+        <b>Experts may provide the court with the specialist knowledge necessary to assess the health condition of a person applying for a disability benefit, for example, including the type of existing health problems, their degree of advancement and the severity of the related ailments, collectively determining the ability or lack of ability to perform employment. Case law emphasises that in this regard the court may not rely on its own conviction, principles of logical thinking, life experience and common knowledge. This is because these criteria, for obvious reasons, do not include specialist medical knowledge.
+  
+        </b>
+        <br>
+      <br>
+      <br> 
+      <br>
+      </div>
+      <br>
+      <br>
+      
+      <div id="II">
+        <h1>Some Experts Opinions:</h1>
+        <hr>
+        <div id="expertsimages1">
+          <div id="kpsir">
+            <div id="kpimg">
+              <img  class="kpimg" src="kpsir.png" alt="kp oli" >
+              <b id="kpname" >KP Sharma Oli</b>
+            </div>
+            <hr>
+            <div id="kptext">I think, the way of we are doing election is not better. It's election, it's should be fair. What if somebody hack technologies!!!
+            </div>
+  
+          </div>
+          <div id="ravisir">
+            <div id="raviimg">
+              <img src="rabisir.png" alt="" class="raviimg">
+              <b id="raviname">Ravi Lamichhane</b>
+            </div>
+            <hr>
+            <div id="ravitext">I am very happy to see this type of election. It's starting of change in our country. It's help to develop better technologies.</div>
+  
+          </div>
+          <br>
+          <br>
+          
+        </div>
+          <div id="expertsimages2">
+            <div id="balensir">
+              <div id="balenimg">
+                <img src="balensir.png" alt="" class="raviimg">
+                <b id="balenname">Balen Sharma</b>
+              </div>
+              <hr>
+              <div id="balentext">Very happy to see this kind of election in this short period. It's just starting. We shouldn't stop.</div>
+    
+            </div>
+            <div id="puspasir">
+              <div id="puspaimg">
+                <img src="puspasir.png" alt="" class="raviimg">
+                <b id="puspaname">pushpa kamal dahal</b>
+              </div>
+              <hr>
+              <div id="puspatext">I don't want to say it's good or bad. We should be very careful of hacker and so no.Let's see who this will fininsted. </div>
+  
+          </div>
+      </div>
+      <div id="expertimgages3">
+        <div id="sharasir">
+          <div id="sharaimg">
+            <img src="sharasir.png" alt="" class="raviimg">
+            <b id="sharaname">Sher Bhadur Devkota</b>
+          </div> 
+          <hr>
+          <div id="sharatext">Namesta, Doing online election in country like nepal is very bad desicion.</div>
+        </div>
+        <br>
+        <Searchbr>
+        <br>  
+      </div> 
+    </div> 
+    <button id="closerec" onclick="document.getElementById('clickexperts').style.display='none' ">CLOSE</button>
+    
+    <br>
+  <br> 
+  <br>
+  <br>
+  <br>
+  
+  </div> 
+  <!-- For search  -->
+  <div class="modal" id="clicksearch">
+    <span onclick="document.getElementById('clicksearch').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <div id="searchbutton">
+      <label for="search"><b>Search</b></label>
+   <input type="text" placeholder="search" name="search" id="makebig" required>
+    </div>
+  </div>
+
+
+  <!-- For media -->
+
+<div class="modal" id="clickmedia">
+  <span onclick="document.getElementById('clickmedia').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <div id="mediaheading">
+    <h1>Advantage of Media For Election</h1>
+    <hr>
+    <b>Media and Election</b>
+    <br>
+    <p>The media are essential to democracy, and a democratic election is impossible without media. A free and fair election is not only about the freedom to vote and the knowledge of how to cast a vote, but also about a participatory process where voters engage in public debate and have adequate information about parties, policies, candidates and the election process itself in order to make informed choices. Furthermore, media acts as a crucial watchdog to democratic elections, safeguarding the transparency of the process. Indeed, a democratic election with no media freedom, or stifled media freedom, would be a contradiction.
+    </p>
+    
+    <p>In order to fulfill their roles, the media need to maintain a high level of professionalism, accuracy and impartiality in their coverage.  Regulatory frameworks can help ensure high standards. Laws and regulation should guarantee fundamental freedoms essential to democracy, including freedom of information and expression, as well as participation. Meanwhile, provisions such as requiring government media, funded out of public money, to give fair coverage and equitable access to opposition parties, help ensure appropriate media behavior during elections.
+    </p>
+    <br><br>
+    <b>Role of the media play in election</b>
+    <br>
+    <p>The media play an indispensable role in the proper functioning of a democracy.  Discussion of the media's functions within electoral contexts, often focuses on their "watchdog" role: by unfettered scrutiny and discussion of the successes and failures of candidates, governments, and electoral management bodies, the media can inform the public of how effectively they have performed and help to hold them to account. Yet the media also have other roles in enabling full public participation in elections:
+    </p>
+    <ul>
+      <ol>
+        <li>by educating voters on how to exercise their democratic rights;
+        </li>
+        <br>
+        <li>by providing a platform for the political parties and candidates to communicate their message to the electorate;
+        </li>
+        <br>
+        <li>by providing a platform for the public to communicate their concerns, opinions, and needs, to the parties/candidates, the EMB, the government, and to other voters, and to interact on these issues;
+        </li>
+        <br>
+        <li>by allowing the parties and candidates to debate with each other;
+        </li>
+        <br>
+        <li>by reporting results and monitoring vote counting;
+        </li>
+        <br>
+        <li>by scrutinizing the electoral process itself, including electoral management, in order to evaluate the fairness of the process, its efficiency, and its probity;
+        </li>
+        <br>
+        <li>by providing information that, as far as possible, avoids inflammatory language, helping to prevent election-related violence.
+        </li>
+        <br>
+      </ol>
+    </ul>
+
+  </div>
+  <button id="closerec" onclick="document.getElementById('clickmedia').style.display='none' ">CLOSE</button>
+  <br><br><br><br><br>
+
+</div>
+
+
+  
+  
+    </div>
+    <!-- Third page -->
+    <div id="thirdpage">
+      <div id="heading3">
+         <b>Please be careful. Your first choice will be final choice!!</b>
+         <h1>TOTAL VOTE COUNT:<span id="toatlvotecount"></span></h1>
+      </div>
+      <br>
+      
+      <div id="electionpaper">
+         <div id="epheading">
+             <h1>Province Election</h1>
+             <label for="Uname"><b>Name:</b></label>
+             <input type="text" placeholder="Enter Name" name="Uname"  required>
+             <label for="city"><b>Citizenship Number:</b></label>
+             <input type="number" placeholder="Citizenship No" name="Uname"  required>
+            
+         </div>
+         <br>
+         <hr>
+         <br>
+         <div id="votingarea">
+             <div id="firstlineva">
+                 <div id="party1">
+   <img src="party1.png" alt="" width="100%" height="100%">
+   <div id="button" class="v1">vote</div>
+   </div>
+   <div id="party2">
+       <img src="party2.png" alt="" width="100%" height="100%">
+       <div id="button" class="v2">vote</div>
+ 
+     </div>
+     <div id="party3">
+         <img src="party3.png" alt="" width="100%" height="100%">
+         <div id="button"class="v3">vote</div>
+ 
+         </div>
+     <div id="party4">
+  <img src="party4.png" alt="" width="100%" height="100%">
+  <div id="button"class="v4">vote</div>
+ 
+                     </div>
+                     
+ 
+             </div>
+          
+           <div id="secondlineva">
+             <div id="party5">
+                 <img src="party5.png" alt="" width="100%" height="100%">
+                 <div id="button"class="v5">vote</div>
+ 
+             </div>
+             <div id="party6">
+                 <img src="party6.png" alt="" width="100%" height="100%">
+                 <div id="button"class="v6">vote</div>
+ 
+             </div>
+             <div id="party7">
+                 <img src="party7.png" alt="" width="100%" height="100%">
+                 <div id="button"class="v7">vote</div>
+ 
+             </div>
+             <div id="party8">
+                 <img src="party8.png" alt="" width="100%" height="100%">
+                 <div id="button"class="v8">vote</div>
+ 
+             </div>
+           </div>  
+           
+             
+         </div>
+ 
+      </div>
+      <br><br>
+ 
+      <div id="last3">
+ 
+         <div id="sign"> <div id="signtext">signture</div></div>
+         <div id="joinfp">
+             <div id="fpleft">
+                 <div id="left3">Left</div>
+             </div>
+     
+             <div id="fpright">
+                 <div id="right3">Right</div>
+     
+ 
+         </div>
+         <br> 
+         <br>
+         
+ 
+     </div>
+ </div>
+ <br> 
+ <br>
+ <div id="lastof3">SUMMITE</div>
+ 
+ 
+ 
+ 
+ 
+     </div>
+     
+     <!-- intex part -->
+     
+     <script src="thrid.js"></script>
+    <script src="second.js"></script>
+    <script src="intex.js"></script>
+    <script src="first.js"></script>
+
+</body>
+</html>
